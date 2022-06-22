@@ -1,0 +1,30 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+
+.header{
+   padding: 40px 0;
+}
+
+.header {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+   .menu{
+      &__list{
+         display: flex;
+      }
+      &__list-item + .menu__list-item{
+         padding-left: 35px;
+      }
+      &__list-link {
+         color: $title-color;
+      }
+      &__list-link--active{
+         color: $accent-color;
+      }
+   }
