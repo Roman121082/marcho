@@ -12,7 +12,11 @@
    &__inner {
       display: flex;
       justify-content: space-between;
+      text-align: center;
    }
+}
+.menu__list{
+   display: flex;
 }
    .menu{
       &__list{
@@ -23,8 +27,37 @@
       }
       &__list-link {
          color: $title-color;
+         text-transform: uppercase;
+         padding-bottom: 1px;
+         transition: all .3s;
+         &:hover{
+            color: $accent-color;
+            border-bottom: 1px solid $accent-color;
+         }
       }
       &__list-link--active{
          color: $accent-color;
       }
    }
+ .user-nav{
+   display: flex;
+   &__link{
+      position: relative;
+   }
+   &__link + .user-nav__link{
+padding-left: 25px;
+   }
+   &__num{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $accent-color;
+      right: -14px;
+      top: -9px;
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+      line-height: 20px;
+   }
+ }
