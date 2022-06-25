@@ -63,3 +63,21 @@ padding-left: 25px;
       line-height: 20px;
    }
  }
+
+ .top-slider{
+   background-color: $bg;
+   padding-top: 65px;
+   &__title{
+      max-width: 670px;
+      font-size: 58px;
+      line-height: 68px;
+      color: $title-color;
+      // @extend %roboto-700;
+      margin-bottom: 35px;
+   }
+
+   &__text{
+      max-width: 470px;
+      margin-bottom: 55px;
+   }
+}
