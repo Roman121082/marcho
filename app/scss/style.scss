@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 
@@ -31,19 +32,19 @@
     text-transform: uppercase;
     padding-bottom: 1px;
     transition: all .3s;
-    @extend %quicksand-400;
+    @extend %roboto-400;
 
     &:hover {
       color: $accent-color;
       border-bottom: 1px solid $accent-color;
-      @extend %quicksand-500;
+      @extend %roboto-700;
     }
   }
 
   &__list-link--active {
     color: $accent-color;
     border-bottom: 1px solid $accent-color;
-    @extend %quicksand-500;
+    @extend %roboto-700;
   }
 }
 
@@ -76,6 +77,25 @@
 .top-slider {
   background-color: $bg;
   padding-top: 65px;
+  background-image: url('../images/top-slider-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 44px;
+
+
+  &__container {
+    max-width: 1520px;
+  }
+
+  &__content {
+    padding-left: 160px;
+    padding-top: 125px;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
 
   &__title {
     max-width: 670px;
@@ -89,6 +109,55 @@
   &__text {
     max-width: 470px;
     margin-bottom: 55px;
+  }
+
+  &__link {
+    @extend %btn;
+    padding: 14px 36px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+
+    li {
+      padding: 0 5px;
+      line-height: 0;
+
+      button {
+        padding: 0;
+        font-size: 0;
+        background-color: transparent;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $default-color;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+        }
+      }
+
+      &.slick-active {
+        button {
+          border-color: $accent-color;
+
+          &::before {
+            background-color: $accent-color;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -183,12 +252,8 @@
   }
 
   &__form-btn {
+    @extend %btn;
     border: none;
-    background-color: $accent-color;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 12px 26px;
-    box-shadow: 0px 7px 20px rgba(255, 17, 48, 0.3);
     cursor: pointer;
   }
 }
