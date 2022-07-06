@@ -57,14 +57,14 @@
   <section class="top">
     <div class="top__container" style="background-image: url(images/top-bg.jpg);">
       <div class="container">
-        <h2 class="top__title title">LOG IN</h2>
+        <h2 class="top__title title">shop page</h2>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a href="" class="breadcrumbs__link">Home</a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="" class="breadcrumbs__link">Log in</a>
+              <a href="" class="breadcrumbs__link">Shop page</a>
             </li>
           </ul>
         </div>
@@ -72,7 +72,43 @@
     </div>
   </section>
   <main>
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop__filters filter">
 
+            <div class="filter-search filter__item">
+              <h3 class="filter__title">search</h3>
+              <form class="filter-search__form" action="#">
+                <input class="filter-search__input" type="text" placeholder="Search your keyword....">
+                <button class="filter-search__btn" type="submit">
+                  <img src="images/icons/search-white.svg" alt="search images">
+                </button>
+              </form>
+            </div>
+
+            <div class="filter__item filter-price">
+              <h3 class="filter__title">Price Filter</h3>
+              <form action="#" class="filter-price">
+                <input type="text" class="filter-price__input" data-min="0" data-max="999" data-from="200"
+                  data-to="800">
+                <label class="filter-price__label">
+                  <span>
+                    Price:
+                    $<span class="filter-price__from"></span> -
+                    $<span class="filter-price__to"></span>
+                  </span>
+                  <button class="filter-price__btn" type="submit">filter</button>
+                </label>
+              </form>
+
+            </div>
+
+          </div>
+          <div class="shop__content"></div>
+        </div>
+      </div>
+    </section>
   </main>
 
 

@@ -74,8 +74,8 @@
   }
 }
 
-.top{
-  &__container{
+.top {
+  &__container {
     max-width: 1700px;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -692,13 +692,13 @@
   margin: 0 auto 115px;
 
   &__links {
- display: block;
+    display: block;
     text-align: center;
     margin-bottom: 40px;
 
   }
 
-  &__link{
+  &__link {
     color: #909090;
     font-size: 22px;
     @extend %roboto-400;
@@ -713,7 +713,7 @@
   &__label {
     margin-bottom: 30px;
     display: block;
- 
+
   }
 
   &__input {
@@ -725,7 +725,8 @@
     height: 60px;
     padding: 0 15px;
   }
-  &__btn{
+
+  &__btn {
     background-color: $title-color;
     text-transform: uppercase;
     color: #fff;
@@ -735,49 +736,170 @@
     display: block;
     width: 100%;
     cursor: pointer;
+    margin-top: -10px;
   }
-  &__error{
+
+  &__error {
     margin-top: 12px;
     color: $accent-color;
     display: inline-block;
+  }
+
+  &__text {
+    padding-bottom: 30px;
   }
 }
 
 .page-404 {
   padding: 110px 0 120px;
+
   &__inner {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 120px 0 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0 115px;
   }
+
   &__content {
-     max-width: 570px;
-     width: 100%;
+    max-width: 570px;
+    width: 100%;
   }
+
   &__title {
-     color: #28384f;
-     margin-bottom: 41px;
-     @extend %roboto-700;
-     font-size: 48px;
+    color: #28384f;
+    margin-bottom: 41px;
+    @extend %roboto-700;
+    font-size: 48px;
   }
+
   &__text {
-     margin-bottom: 55px;
-     max-width: 470px;
+    margin-bottom: 55px;
+    max-width: 470px;
   }
+
   &__link {
-     background-color: $accent-color;
-     color: #fff;
-     text-transform: uppercase;
-     @extend %roboto-400;
-     padding: 14px 35px;
-     box-shadow: 0px 5px 25px 0px rgba (254, 62, 87, 0.35);
+    background-color: $accent-color;
+    color: #fff;
+    text-transform: uppercase;
+    @extend %roboto-400;
+    padding: 14px 35px;
+    box-shadow: 0px 5px 25px 0px rgba (254, 62, 87, 0.35);
   }
 }
 
 
+.shop {
+  padding: 120px 0 105px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    width: 370px;
+    margin-right: 30px;
+  }
+}
+
+.filter {
+  &__item {
+    padding: 35px 30px 40px;
+    border: 1px solid #ececec;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $title-color;
+    font-size: 22px;
+    @extend %roboto-400;
+    margin-bottom: 25px;
+  }
+}
+
+.filter-search {
 
 
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    border: none;
+    background-color: $bg;
+    height: 50px;
+    padding: 0 5px 0 15px;
+    width: 260px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: $accent-color;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.filter-price {
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  &__btn {
+    @extend %btn;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.irs--flat .irs-line {
+  top: 13px;
+  height: 5px;
+  background-color: #ececec;
+  border-radius: 0;
+}
+
+
+.irs--flat .irs-handle {
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(90, 90, 90, 0.2);
+}
+
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+
+.irs--flat .irs-bar {
+  top: 13px;
+  height: 5px;
+  background-color: $accent-color;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+  display: none;
+}
+
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
+.irs--flat {
+  height: 30px;
+}
 
 
 
