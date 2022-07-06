@@ -13,6 +13,9 @@ body {
   @extend %quicksand-500;
 }
 
+.header--404-page{
+  background-color: $bg;}
+
 main {
   flex-grow: 1;
 }
