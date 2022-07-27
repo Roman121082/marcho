@@ -13,7 +13,20 @@ $(function () {
     $('.product-item').removeClass('product-item--list')
   });
 
-
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 4,
+    sledesToScroll: 1,
+    vertical: true,
+    draggable: false,
+  });
+  $('.product-slide__big').slick({
+    asNavFor: '.product-slide__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true,
+  });
 
 
 
@@ -49,7 +62,7 @@ $(function () {
     });
 
 
-    $('.select-style').styler({});
+    $('.select-style, .product-one__item-num').styler({});
   });
 
 
