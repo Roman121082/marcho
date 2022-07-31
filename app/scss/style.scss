@@ -2203,6 +2203,7 @@
   &__info-item {
     margin-top: 55px;
     color: $title-color;
+    @extend %roboto-700;
     padding-left: 80px;
     position: relative;
 
