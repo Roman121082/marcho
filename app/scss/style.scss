@@ -1600,7 +1600,7 @@
     object-fit: cover;
   }
 
-  &__content {}
+
 
   &__content-top {
     display: flex;
@@ -1976,7 +1976,7 @@
     }
   }
 
-  &__link {}
+
 
   &__img-link {
     display: block;
@@ -1990,7 +1990,7 @@
     object-fit: cover;
   }
 
-  &__box {}
+
 
   &__title-link {
     @extend %roboto-400;
@@ -1998,8 +1998,6 @@
     color: $title-color;
     line-height: 28px;
   }
-
-  &__box-title {}
 
   &__date {
     padding-left: 26px;
@@ -2014,6 +2012,161 @@
       height: 16px;
       background-image: url('../images/icons/calendar.svg');
     }
+  }
+}
+
+
+.blog-one {
+
+
+
+  &__text {
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 30px;
+    margin-top: -1px;
+
+    h4 {
+      color: $title-color;
+      font-size: 22px;
+      @extend %roboto-700;
+      margin: 25px 0;
+    }
+
+    p {
+      margin: 25px 0;
+    }
+
+    blockquote {
+      background-color: $bg;
+      border-left: 3px solid $accent-color;
+      color: $title-color;
+      font-size: 22px;
+      line-height: 32px;
+      margin: 25px 0;
+      @extend %roboto-400;
+      padding: 35px;
+
+    }
+  }
+
+
+
+  &__form-title {
+    text-transform: uppercase;
+    margin: 35px 0 25px;
+    color: $title-color;
+    @extend %roboto-700;
+    font-size: 24px;
+
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &__left-img {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__right-img {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__info-link {
+    padding-left: 28px;
+    margin-right: 30px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 16px;
+      height: 16px;
+      background-image: url('../images/icons/calendar.svg');
+    }
+  }
+
+  &__info-link--comment::before {
+    background-image: url('../images/icons/comment.svg');
+    top: 4px;
+  }
+
+  &__info-link--author::before {
+    background-image: url('../images/icons/user-blog.svg');
+  }
+
+  .comments-form {
+    border-bottom: none;
+  }
+
+  .comments-title {
+    margin-bottom: 25px;
+    color: $title-color;
+    font-size: 24px;
+    @extend %roboto-700;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    margin: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tags,
+  &__share {
+    span {
+      text-transform: uppercase;
+      color: $title-color;
+      @extend %roboto-700;
+    }
+  }
+
+  &__share {
+    a {
+      margin-right: 10px;
+      vertical-align: middle;
+
+      &:hover {
+        path {
+          fill: $accent-color;
+        }
+      }
+
+      path {
+        fill: $default-color;
+      }
+    }
+  }
+
+  &__author {
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  &__author-img {
+    width: 140px;
+    height: 140px;
+    margin-right: 30px;
+    object-fit: cover;
+  }
+
+  &__author-name {
+    margin-bottom: 24px;
+    font-size: 22px;
+    @extend %roboto-700;
+    color: $title-color;
+
   }
 }
 
