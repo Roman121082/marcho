@@ -1,1 +1,1 @@
-# Интернет магазин https://roman121082.github.io/marcho/app/
+# Интернет магазин https://github.com/Roman121082/marcho.git
